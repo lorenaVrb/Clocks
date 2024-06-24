@@ -1,0 +1,144 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+#digitalContainer {
+  display: block;
+}
+
+#date {
+  text-align: center;
+}
+
+.hours,
+.minutes,
+.seconds {
+  height: 5em;
+  position: relative;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#analogContainer {
+  position: relative;
+  margin: auto;
+  height: 15em;
+  width: 15em; /* Adjusted to make it a square */
+  display: none;
+  border-radius: 50%;
+  overflow: hidden; /* Ensuring no overflow */
+}
+
+.clocker {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 765px) {
+  .clocker {
+    width: 20em;
+    height: 20em;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@media only screen and (max-width: 365px) {
+  .clocker {
+    width: 15em;
+    height: 15em;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+.clocker .number {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.clocker .analogHand {
+  -rotation: 10;
+  position: absolute;
+  background-color: #000;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(calc(var(-rotation) * 1deg));
+}
+
+.clocker .analogHand.minute {
+  height: 40%;
+  width: 5px;
+}
+
+.clocker .analogHand.second {
+  height: 48%;
+  width: 3px;
+}
+
+.clocker .analogHand.hour {
+  height: 30%;
+  width: 10px;
+}
+
+.number1 {
+  transform: rotate(30deg);
+}
+
+.number2 {
+  transform: rotate(60deg);
+}
+
+.number3 {
+  transform: rotate(90deg);
+}
+
+.number4 {
+  transform: rotate(120deg);
+}
+
+.number5 {
+  transform: rotate(150deg);
+}
+
+.number6 {
+  transform: rotate(180deg);
+}
+
+.number7 {
+  transform: rotate(210deg);
+}
+
+.number8 {
+  transform: rotate(240deg);
+}
+
+.number9 {
+  transform: rotate(270deg);
+}
+
+.number10 {
+  transform: rotate(300deg);
+}
+
+.number11 {
+  transform: rotate(330deg);
+}/*# sourceMappingURL=styles.css.map */
